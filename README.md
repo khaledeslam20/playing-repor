@@ -220,11 +220,11 @@ Two models stood out during evaluation:
 - **pr_auc_val = 0.7798**
 
 
-**Both two models achieve  almost same f1_score at defult threshold , the only difference that Random forest model achieve highr pr_auc, so which model you will choose to run depend on you or try both of them
-and see what will give best performance according to your criteria.**
+**Both models achieved almost the same F1 score at the default threshold. The only difference is that the Random Forest model had a higher PR-AUC. So, the choice of which model to use depends on your criteria — you can try both and select the one that performs best for your needs.**
 
 
-**let's take another point of view and see the confusion matrix**
+
+**Now, let’s take another point of view and look at the confusion matrix.**
 
 
 <img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" /> 
@@ -249,7 +249,22 @@ and see what will give best performance according to your criteria.**
 - False alarms are expensive to resolve
 
 
-**finally it's a trade-off and just try to make a decision from many perspective not one perspective**
+**In the end, it’s a trade-off. The decision should be made by looking at the problem from multiple perspectives, not just one.**
+
+**Note: If you want a full analysis of all models across all experiments, go to Section 4 of the report for a detailed explanation.**
+
+---
+
+## Results
+
+**1- Results for all models and experiments are based on the default threshold applied to the validation dataset.**
+
+<img width="1200" height="700" alt="f1_heatmap" src="https://github.com/user-attachments/assets/79bb5eb4-684e-444a-8779-18166a8c9929" />
+
+**2-Results for all models and experiments are based on the optimized threshold applied to the validation dataset.**
+<img width="1200" height="700" alt="f1_heatmap_best_threshold" src="https://github.com/user-attachments/assets/3a2580ba-f252-4f7c-b787-a892bee2e1e9" />
+
+
 
 
 
