@@ -86,7 +86,23 @@ pip install -r requirements.txt
 │       f1_scores_undersample_scaled.png
 
 ```
+.gitattributes — Git configuration file for line endings and file attribute settings.
 
+credit_fraud_data_utils.py — Contains data preprocessing utilities (scaling, sampling, splitting).
+
+Credit_Fraud_Detection_Report.pdf — Final project report with methodology, results, and key insights.
+
+credit_fraud_val_utils.py — Evaluation utilities: model validation, threshold tuning, and result saving.
+
+Fraud_Credit_Train.py — Main training script to run multiple experiments with different models and sampling strategies.
+
+Fraud_detection_EDA.ipynb — Exploratory Data Analysis notebook with visualizations and data exploration.
+
+predict.py — Inference script for loading trained models and predicting fraud on new datasets.
+
+README.md — Documentation file (this file).
+
+requirements.txt — Lists Python libraries and their versions required to run the project.
 
 
 
