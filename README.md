@@ -86,23 +86,53 @@ pip install -r requirements.txt
 │       f1_scores_undersample_scaled.png
 
 ```
-```.gitattributes ``` — Git configuration file for line endings and file attribute settings.
+```.gitattributes```: Git configuration file for line endings and file attribute settings.
 
-credit_fraud_data_utils.py — Contains data preprocessing utilities (scaling, sampling, splitting).
+```credit_fraud_data_utils.py```: Contains data preprocessing utilities (scaling, sampling, splitting, loading).
 
-Credit_Fraud_Detection_Report.pdf — Final project report with methodology, results, and key insights.
+```Credit_Fraud_Detection_Report.pdf```: Final project report with detailed methodology, results, and key insights.
 
-credit_fraud_val_utils.py — Evaluation utilities: model validation, threshold tuning, and result saving.
+```credit_fraud_val_utils.py```: Evaluation utilities: model validation, threshold tuning, loading models, and result saving.
 
-Fraud_Credit_Train.py — Main training script to run multiple experiments with different models and sampling strategies.
+```Fraud_Credit_Train.py```: Main training script to run multiple experiments with different models and sampling strategies.
 
-Fraud_detection_EDA.ipynb — Exploratory Data Analysis notebook with visualizations and data exploration.
+```Fraud_detection_EDA.ipynb```: Exploratory Data Analysis notebook with visualizations and data exploration on training data.
 
-predict.py — Inference script for loading trained models and predicting fraud on new datasets.
+```predict.py```: Inference script for loading trained models and predicting fraud on new datasets.
 
-README.md — Documentation file (this file).
+```README.md```: Documentation file (this file).
 
-requirements.txt — Lists Python libraries and their versions required to run the project.
+```requirements.txt```: Lists Python libraries and their versions required to run the project.
+
+```.all_trained_models/```
+Stores all trained models from different experiments. Useful for comparing multiple runs.
+
+```.best_models/```
+- Contains the best performing models ( MLPClassifier, Random Forest) based on F1-score.
+- model_scaled_MLPClassifier_default_thresh.pkl – Best MLP model using scaled data.
+- model_scaled_RandomForest_default_thresh.pkl – Best Random Forest model using scaled data.
+
+```.classification_reports_for_all_models/```
+Folder where classification reports (precision, recall, F1-score) are saved for each experiment.
+
+```.confusion_metrics_for_all_models/```
+Contains confusion matrix plots to visualize model performance across classes for each experiment.
+
+```.data/```
+Folder containing the dataset in zipped format.
+
+- train.csv – Training set
+- val.csv – Validation set
+- test.csv – Test set
+- trainval.csv – Combined training + validation set
+
+```.f1_score_visualization(for_all_models_through_all_experiments)/```
+Visualizations comparing F1-scores across different models and sampling techniques.
+Includes:
+- **f1_heatmap.png** — F1 scores for all models and experiments combined in a single figure.
+- **f1_scores_*.png** — F1 scores for various experiments (raw, scaled, over/undersampling, cost-sensitive, etc.)
+
+
 
 
 
