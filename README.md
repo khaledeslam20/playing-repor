@@ -132,6 +132,42 @@ Includes:
 - **f1_heatmap.png** — F1 scores for all models and experiments combined in a single figure.
 - **f1_scores_*.png** — F1 scores for various experiments (raw, scaled, over/undersampling, cost-sensitive, etc.)
 
+---
+## How to run 
+**1- Train Models (if you want to train from scratch)**
+
+```bash
+python train.py \
+  --train_path path/to/train.csv \
+  --val_path path/to/val.csv \
+  --scaler standard \
+  --run all
+```
+
+```--train_path``` : path to the training dataset
+
+```--val_path```  path to the validation dataset
+
+```--scaler```: choose between standard, minmax, robust, or none
+
+```--run```: use all to run all experiments or best to run only the best configuration.
+
+**2- Run predictions with a saved model (inference phase)**
+
+```bash
+python predict.py \
+  --model_path "model_scaled_MLPClassifier_default_thresh.pkl" \
+  --test_path "path/to/test.csv" \
+  --output_dir "outputs/predictions"
+```
+
+```--model_path```: path to your saved model .pkl file
+
+```--test_path```: path to the test dataset CSV file
+
+```--output_dir```: directory to save predictions and metrics (optional)
+
+---
 
 
 
