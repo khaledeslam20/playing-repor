@@ -86,7 +86,7 @@ pip install -r requirements.txt
 │       f1_scores_undersample_scaled.png
 
 ```
-.gitattributes — Git configuration file for line endings and file attribute settings.
+```.gitattributes ``` — Git configuration file for line endings and file attribute settings.
 
 credit_fraud_data_utils.py — Contains data preprocessing utilities (scaling, sampling, splitting).
 
