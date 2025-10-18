@@ -1,5 +1,3 @@
-# playing-repor
-
 # Credit-Card-Fraud-Detection
 
 ---
@@ -40,12 +38,12 @@ To install the required dependencies, run:
 ```bash
 pip install -r requirements.txt
 
-
+```
 ---
 
 ## Repo structure 
 
-
+```bash
 
 │   .gitattributes
 │   credit_fraud_data_utils.py
@@ -87,8 +85,9 @@ pip install -r requirements.txt
 │       f1_scores_undersample.png
 │       f1_scores_undersample_scaled.png
 
+```
 
----
+
 
 
 
