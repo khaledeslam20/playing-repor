@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ## Repo structure 
 
-```bash
+
 
 │   .gitattributes
 │   credit_fraud_data_utils.py
