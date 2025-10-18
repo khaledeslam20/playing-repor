@@ -121,10 +121,10 @@ Contains confusion matrix plots to visualize model performance across classes fo
 ```.data/```
 Folder containing the dataset in zipped format.
 
-- train.csv – Training set
-- val.csv – Validation set
-- test.csv – Test set
-- trainval.csv – Combined training + validation set
+- **train.csv**: Training set
+- **val.csv**: Validation set
+- **test.csv**: Test set
+- **trainval.csv**: Combined training + validation set
 
 ```.f1_score_visualization(for_all_models_through_all_experiments)/```
 Visualizations comparing F1-scores across different models and sampling techniques.
