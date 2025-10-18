@@ -227,8 +227,29 @@ and see what will give best performance according to your criteria.**
 **let's take another point of view and see the confusion matrix**
 
 
-<img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" /> <img width="640" height="480" alt="conf_matrix_scaled_RandomForest_default" src="https://github.com/user-attachments/assets/ed5ca1c6-a9a7-46c0-b76d-4de16e5fd78b" />
+<img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" /> 
+<img width="640" height="480" alt="conf_matrix_scaled_RandomForest_default" src="https://github.com/user-attachments/assets/ed5ca1c6-a9a7-46c0-b76d-4de16e5fd78b" />
 
+**MLP Classifier:**                                                 **Random Forest:**                     
+- True Positives (TP): 72                                           - True Positives (TP): 69
+- False Positives (FP): 11                                          - False Positives (FP): 6
+- False Negatives (FN): 18                                          - False Negatives (FN): 21
+  
+
+
+**Choose MLP if**:
+- Fraud losses are extremely costly
+- You can handle customer complaints from false blocks
+- Investigation capacity is high
+
+
+**Choose Random Forest if**:
+- Customer experience is critical
+- Investigation resources are limited
+- False alarms are expensive to resolve
+
+
+**finally it's a trade-off and just try to make a decision from many perspective not one perspective**
 
 
 
