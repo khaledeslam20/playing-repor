@@ -169,6 +169,42 @@ python predict.py \
 
 ---
 
+## Models and Techniques Used to Handle Class Imbalance
+
+In this section, I describe the techniques and machine learning models I used to address the challenge of class imbalance in fraud detection.
+
+**1- Techniques**:
+To handle the imbalance between the majority (non-fraud) and minority (fraud) classes, I applied the following strategies:
+- Using the Data As-Is – Training the model on the original imbalanced dataset to serve as a baseline and see if the resampling techniques will improve the performance or harm it.
+- Undersampling – Reducing the number of majority class samples to balance the dataset.
+- Oversampling using SMOTE (Synthetic Minority Oversampling Technique) – Generating synthetic examples for the minority class to increase its representation.
+- Combined Sampling – Applying both oversampling and undersampling to create a more balanced dataset.
+- Cost-Sensitive Learning – Assigning a higher cost to misclassifying fraud cases to force the model to focus more on the minority class.
+  
+
+**2- Models**:
+I experimented with a variety of machine learning algorithms to evaluate how well they perform with different sampling strategies:
+- Logistic Regression
+- Random Forest
+- XGBoost
+- CatBoost
+- MLP (Multi-Layer Perceptron)
+- Voting Classifier
+
+
+**Note**: I removed XGBoost and CatBoost because they overfitted the data and decreased the overall performance. This also helped me see how the voting classifier performs without them.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
