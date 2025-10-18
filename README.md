@@ -2,7 +2,6 @@
 
 ---
 
-# Credit-Card-Fraud-Detection
 ## overview
 This repository provides a comprehensive guide to a credit card fraud detection project based on a Kaggle dataset.
 The main challenge of this project is the highly imbalanced dataset, where only 492 out of 284,807 transactions are fraudulent, representing just 0.172% of all transactions.
@@ -175,11 +174,12 @@ In this section, I describe the techniques and machine learning models I used to
 
 **1- Techniques**:
 To handle the imbalance between the majority (non-fraud) and minority (fraud) classes, I applied the following strategies:
-- Using the Data As-Is – Training the model on the original imbalanced dataset to serve as a baseline and see if the resampling techniques will improve the performance or harm it.
-- Undersampling – Reducing the number of majority class samples to balance the dataset.
-- Oversampling using SMOTE (Synthetic Minority Oversampling Technique) – Generating synthetic examples for the minority class to increase its representation.
-- Combined Sampling – Applying both oversampling and undersampling to create a more balanced dataset.
-- Cost-Sensitive Learning – Assigning a higher cost to misclassifying fraud cases to force the model to focus more on the minority class.
+
+-** Using the Data As-Is**: Training the model on the original imbalanced dataset to serve as a baseline and see if the resampling techniques will improve the performance or harm it.
+- **Undersampling**: Reducing the number of majority class samples to balance the dataset.
+- **Oversampling**: using SMOTE (Synthetic Minority Oversampling Technique), generating synthetic examples for the minority class to increase its representation.
+- **Combined Sampling**: Applying both oversampling and undersampling to create a more balanced dataset.
+- **Cost-Sensitive Learning**: Assigning a higher cost to misclassifying fraud cases to force the model to focus more on the minority class.
   
 
 **2- Models**:
@@ -193,6 +193,45 @@ I experimented with a variety of machine learning algorithms to evaluate how wel
 
 
 **Note**: I removed XGBoost and CatBoost because they overfitted the data and decreased the overall performance. This also helped me see how the voting classifier performs without them.
+
+---
+
+## Top models 
+**Criteria Considered**
+In real-world projects, the **best model** depends on the business’s priorities—such as agreed performance targets and acceptable error trade-offs. In this project, **my primary selection metric was the F1-score**.
+Since two models achieved almost the same F1-score, I applied additional considerations :
+- **Cost of Missing Fraud vs Cost of False Alarms**
+- **Customer Experience (too many blocks = angry customers)**
+- **Investigation Capacity (Can your team handle 1000 alerts/day?)**
+
+
+**Top two models**
+Two models stood out during evaluation:
+
+- **Random Forest (raw data or raw data with scaling)**
+- **MLPClassifier (scaled data)**
+
+**Random Forest results at default threshold**
+- **f1_score_val = 0.8363**
+- **pr_auc_val = 0.8525**
+
+**MLPClassifier results at default threshold**
+- **f1_score_val = 0.8323**
+- **pr_auc_val = 0.7798**
+
+
+**both two models achieve  almost same f1_score at defult threshold , the only difference that Random forest model achieve highr pr_auc, so which model you will choose to run depend on you or try both of them
+and see what will give best performance according to your criteria.**
+
+
+**let's take another point of view and see the confusion matrix**
+
+
+<img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" />
+
+<img width="640" height="480" alt="conf_matrix_scaled_RandomForest_default" src="https://github.com/user-attachments/assets/ed5ca1c6-a9a7-46c0-b76d-4de16e5fd78b" />
+
+
 
 
 
