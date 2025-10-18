@@ -226,9 +226,11 @@ Two models stood out during evaluation:
 
 **Now, let’s take another point of view and look at the confusion matrix.**
 
-
-<img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" /> 
+<p align="center">
+  <img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" /> 
 <img width="640" height="480" alt="conf_matrix_scaled_RandomForest_default" src="https://github.com/user-attachments/assets/ed5ca1c6-a9a7-46c0-b76d-4de16e5fd78b" />
+</p>
+
 
 **MLP Classifier:**                                                 **Random Forest:**                     
 - True Positives (TP): 72                                           - True Positives (TP): 69
