@@ -220,16 +220,16 @@ Two models stood out during evaluation:
 - **pr_auc_val = 0.7798**
 
 
-**both two models achieve  almost same f1_score at defult threshold , the only difference that Random forest model achieve highr pr_auc, so which model you will choose to run depend on you or try both of them
+**Both two models achieve  almost same f1_score at defult threshold , the only difference that Random forest model achieve highr pr_auc, so which model you will choose to run depend on you or try both of them
 and see what will give best performance according to your criteria.**
 
 
 **let's take another point of view and see the confusion matrix**
 
 
-<img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" />
+<img width="640" height="480" alt="conf_matrix_scaled_MLPClassifier_default" src="https://github.com/user-attachments/assets/92411390-5dcb-4ad1-9bd0-b0fc6a4b2bcf" /> <img width="640" height="480" alt="conf_matrix_scaled_RandomForest_default" src="https://github.com/user-attachments/assets/ed5ca1c6-a9a7-46c0-b76d-4de16e5fd78b" />
 
-<img width="640" height="480" alt="conf_matrix_scaled_RandomForest_default" src="https://github.com/user-attachments/assets/ed5ca1c6-a9a7-46c0-b76d-4de16e5fd78b" />
+
 
 
 
